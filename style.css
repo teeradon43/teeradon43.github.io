@@ -3,22 +3,31 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    background-color: #F4F1DE ;
 }
 h1{
     font-size: 38px;
     font-weight: bold;
     font-family: Georgia;
-    
+    color: #3D405B;
 }
 img{
+    margin-top: 2em;
     padding: 10px;
-    border: red solid 5px;
+    border: #E07A5F solid 5px;
     animation-name: rotate;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 @keyframes rotate {
     0% {transform: rotate(0deg)}
-    50% {transform: rotate(180deg)}
-    100% { transform: rotate(360deg)}
+    100% {transform: rotate(360deg)}
+}
+#describtion{
+    margin-top: 3em;
+    font-style: italic;
+    font-size: 20px;
+    color: #3D405B;
+    font-weight: bold;
 }
