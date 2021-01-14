@@ -1,33 +1,167 @@
+html{
+}
+
 body{
     display:flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    background-color: #3D405B;
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
     justify-content: center;
-    background-color: #F4F1DE ;
+    background-color: #E07A5F;
+    align-items: center;
+    text-align:center;
+    height: 100%;
 }
-h1{
-    font-size: 38px;
-    font-weight: bold;
-    font-family: Georgia;
-    color: #3D405B;
+
+.navbar h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: Impact;
+    text-shadow: 5px 5px black;
+    font-size: 36px;
+    letter-spacing: 7px;
+    transition: 1s;
+    content: '';
 }
-img{
-    margin-top: 2em;
-    padding: 10px;
-    border: #E07A5F solid 5px;
-    animation-name: rotate;
-    animation-duration: 20s;
+.navbar h1:hover{
+    font-size: 48px;
+    letter-spacing: 24px;
+    border-color: black;
+    width: 100%;
+}
+
+.main-container{
+    display:flex;
+    flex-direction: row;
+    height:100%;
+}
+.leftCol{
+    padding-top:1em;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    width:60%;
+    height: 100%;
+    margin: 0 5% 5% 15%;
+}
+.profile_badge{
+    border: 5px solid whitesmoke;
+    width:50%;
+    height:50%;
+    min-width: 300px;
+    margin-left: 0 5em;
+    padding: 5px;
+    animation-name: rgb;
     animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation-duration: 60s;
+    animation-direction:alternate;
 }
-@keyframes rotate {
-    0% {transform: rotate(0deg)}
-    100% {transform: rotate(360deg)}
+@keyframes rgb{
+    0% { border-color:#000000}
+    14% { border-color: #ff0000}
+    28% { border-color: #00ff00}
+    42% { border-color: #ffff00}
+    56% { border-color: #0000ff}
+    70% { border-color: #ff00ff}
+    84% { border-color: #00ffff}
+    98% {border-color: #ffffff}
 }
-#describtion{
-    margin-top: 3em;
-    font-style: italic;
-    font-size: 20px;
-    color: #3D405B;
-    font-weight: bold;
+#namecard{
+    margin: 1em;
+    padding: 1em;
+    border: 5px solid whitesmoke;
+}
+.profile_badge img , #namecard{
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    background-color: #81B29A;
+    
+}
+.profile_badge img:hover , #namecard:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 20px black;
+    margin: 0;
+}
+.profile_badge p{
+    padding-left:1rem;
+}
+.ladder_badge{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+.rightCol{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width:30%;
+    height: 100%;
+}
+.rightCol p{
+    color:white;
+}
+ul{
+    list-style-type: none;
+    width: 100%;
+}
+li{
+    background-color: #E07A5F;
+    padding: 1.5em;
+    width: 77%;
+    border-left: 2em solid #ffffff;
+    margin-bottom: 2em;
+    transition: 300ms;
+}
+li:hover{
+    border-left: 10em solid #ffffff;
+    background-color: yellow;
+    width: 44%;
+}
+.footer {
+    position: static;
+    bottom: 0;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    background-color: #E07A5F;
+    text-align: center;
+  }
+
+.fa {
+    padding: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+    background: #f40083;
+    color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
