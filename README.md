@@ -1,1 +1,1 @@
-# [Click Here](http://teeradon43.github.io.) or go to teeradon43.github.io
+# [Click Here](http://teeradon43.github.io) or go to teeradon43.github.io
